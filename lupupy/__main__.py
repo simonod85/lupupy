@@ -71,6 +71,14 @@ def get_arguments():
     )
 
     parser.add_argument(
+        "--protocol",
+        help="Protocol to use while connecting",
+        required=False,
+        default="http",
+        action="store_true"
+    )
+
+    parser.add_argument(
         "--disarm",
         help="Disarm the alarm",
         required=False,
